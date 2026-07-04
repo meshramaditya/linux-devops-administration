@@ -1,1 +1,76 @@
+```log
+===========================================================
+Application Monitor Log
+Project : Linux DevOps Administration & Automation on AWS
+Server  : AWS EC2 Ubuntu 24.04
+Service : nginx
+===========================================================
 
+[2026-07-04 08:00:01] INFO     : Application monitor started.
+[2026-07-04 08:00:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:05:01] INFO     : Health check initiated.
+[2026-07-04 08:05:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:10:01] INFO     : Health check initiated.
+[2026-07-04 08:10:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:15:01] INFO     : Health check initiated.
+[2026-07-04 08:15:01] WARNING  : nginx service is NOT running.
+[2026-07-04 08:15:02] ACTION   : Attempting automatic restart...
+[2026-07-04 08:15:03] SUCCESS  : nginx restarted successfully.
+-----------------------------------------------------------
+
+[2026-07-04 08:20:01] INFO     : Health check initiated.
+[2026-07-04 08:20:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:25:01] INFO     : Health check initiated.
+[2026-07-04 08:25:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:30:01] INFO     : Health check initiated.
+[2026-07-04 08:30:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:35:01] INFO     : Health check initiated.
+[2026-07-04 08:35:01] WARNING  : nginx service is NOT running.
+[2026-07-04 08:35:02] ACTION   : Restarting nginx service...
+[2026-07-04 08:35:03] SUCCESS  : nginx restarted successfully.
+-----------------------------------------------------------
+
+[2026-07-04 08:40:01] INFO     : Health check initiated.
+[2026-07-04 08:40:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:45:01] INFO     : Health check initiated.
+[2026-07-04 08:45:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:50:01] INFO     : Health check initiated.
+[2026-07-04 08:50:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 08:55:01] INFO     : Health check initiated.
+[2026-07-04 08:55:01] STATUS   : nginx service is running.
+-----------------------------------------------------------
+
+[2026-07-04 09:00:01] INFO     : Daily monitoring summary generated.
+
+Summary
+-----------------------------------------------------------
+Total Health Checks        : 13
+Successful Checks          : 11
+Application Failures       : 2
+Automatic Restarts         : 2
+Failed Restarts            : 0
+Manual Intervention Needed : 0
+Overall Status             : HEALTHY
+-----------------------------------------------------------
+
+End of Report
+===========================================================
+```
