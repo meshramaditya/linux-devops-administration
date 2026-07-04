@@ -1,1 +1,77 @@
+```log id="k7mzcp"
+===========================================================
+Disk Usage Monitor Log
+Project : Linux DevOps Administration & Automation on AWS
+Server  : AWS EC2 Ubuntu 24.04
+Mount Point : /
+Warning Threshold : 80%
+===========================================================
 
+[2026-07-04 08:00:01] INFO     : Disk usage check initiated.
+[2026-07-04 08:00:01] USAGE    : 54%
+[2026-07-04 08:00:01] STATUS   : Disk usage is within the normal range.
+-----------------------------------------------------------
+
+[2026-07-04 09:00:01] INFO     : Disk usage check initiated.
+[2026-07-04 09:00:01] USAGE    : 61%
+[2026-07-04 09:00:01] STATUS   : Disk usage is within the normal range.
+-----------------------------------------------------------
+
+[2026-07-04 10:00:01] INFO     : Disk usage check initiated.
+[2026-07-04 10:00:01] USAGE    : 76%
+[2026-07-04 10:00:01] STATUS   : Disk usage is within the acceptable range.
+-----------------------------------------------------------
+
+[2026-07-04 11:00:01] INFO     : Disk usage check initiated.
+[2026-07-04 11:00:01] USAGE    : 82%
+[2026-07-04 11:00:01] WARNING  : Disk usage exceeded configured threshold (80%).
+[2026-07-04 11:00:01] ACTION   : Alert generated and logged.
+-----------------------------------------------------------
+
+[2026-07-04 12:00:01] INFO     : Disk usage check initiated.
+[2026-07-04 12:00:01] USAGE    : 87%
+[2026-07-04 12:00:01] WARNING  : High disk utilization detected.
+[2026-07-04 12:00:02] ACTION   : Administrator notified.
+-----------------------------------------------------------
+
+[2026-07-04 12:20:35] INFO     : Manual disk cleanup started.
+[2026-07-04 12:21:15] ACTION   : Removed old backup archives (>7 days).
+[2026-07-04 12:21:40] ACTION   : Deleted obsolete log files (>30 days).
+[2026-07-04 12:22:05] ACTION   : Cleared package cache using 'apt clean'.
+-----------------------------------------------------------
+
+[2026-07-04 13:00:01] INFO     : Disk usage check initiated.
+[2026-07-04 13:00:01] USAGE    : 68%
+[2026-07-04 13:00:01] STATUS   : Disk usage returned to a healthy level.
+-----------------------------------------------------------
+
+[2026-07-04 14:00:01] INFO     : Disk usage check initiated.
+[2026-07-04 14:00:01] USAGE    : 64%
+[2026-07-04 14:00:01] STATUS   : Disk usage is within the normal range.
+-----------------------------------------------------------
+
+Daily Monitoring Summary
+-----------------------------------------------------------
+Total Checks Performed     : 7
+Normal Checks              : 5
+Warning Alerts             : 2
+Critical Alerts            : 0
+Highest Disk Usage         : 87%
+Threshold Configured       : 80%
+Cleanup Performed          : Yes
+Current Disk Usage         : 64%
+Overall Disk Status        : HEALTHY
+-----------------------------------------------------------
+
+Recommendations
+-----------------------------------------------------------
+- Continue automated monitoring every 10 minutes.
+- Remove backup archives older than 7 days.
+- Rotate application logs regularly.
+- Monitor disk growth trends.
+- Increase storage capacity if usage remains above 80%.
+-----------------------------------------------------------
+
+End of Disk Monitor Log
+===========================================================
+```
