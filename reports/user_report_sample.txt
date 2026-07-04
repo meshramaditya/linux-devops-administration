@@ -1,1 +1,181 @@
+```text id="9xw2pe"
+===========================================================
+User Management Report
+Project : Linux DevOps Administration & Automation on AWS
+Server  : AWS EC2 Ubuntu 24.04 LTS
+Hostname: ip-172-31-15-210
+Generated On: 2026-07-04 15:00:01 IST
+===========================================================
 
+SYSTEM INFORMATION
+-----------------------------------------------------------
+Hostname              : ip-172-31-15-210
+Operating System      : Ubuntu 24.04 LTS
+Current User          : ubuntu
+System Uptime         : 5 Days, 12 Hours, 48 Minutes
+
+===========================================================
+ALL USERS
+===========================================================
+
+USERNAME              USER ID (UID)     HOME DIRECTORY
+
+root                  0                 /root
+ubuntu                1000              /home/ubuntu
+developer1            1001              /home/developer1
+developer2            1002              /home/developer2
+developer3            1003              /home/developer3
+devops1               1004              /home/devops1
+nobody                65534             /nonexistent
+
+Total Users : 7
+
+===========================================================
+LOGGED-IN USERS
+===========================================================
+
+USERNAME              TERMINAL          LOGIN TIME
+
+ubuntu                pts/0             2026-07-04 09:15
+developer1            pts/1             2026-07-04 10:05
+
+Total Logged-in Users : 2
+
+===========================================================
+LAST LOGIN HISTORY
+===========================================================
+
+USERNAME              LAST LOGIN
+
+ubuntu                Sat Jul 04 09:15
+developer1            Sat Jul 04 10:05
+developer2            Fri Jul 03 16:20
+developer3            Thu Jul 02 14:42
+devops1               Sat Jul 04 08:50
+
+===========================================================
+GROUP INFORMATION
+===========================================================
+
+developers
+-----------------------------------------------------------
+Members
+
+developer1
+developer2
+developer3
+
+-----------------------------------------------------------
+
+devops
+-----------------------------------------------------------
+Members
+
+devops1
+
+-----------------------------------------------------------
+
+sudo
+-----------------------------------------------------------
+Members
+
+ubuntu
+devops1
+
+===========================================================
+USER GROUP MEMBERSHIP
+===========================================================
+
+ubuntu
+Groups
+
+ubuntu sudo adm
+
+-----------------------------------------------------------
+
+developer1
+Groups
+
+developer1 developers
+
+-----------------------------------------------------------
+
+developer2
+Groups
+
+developer2 developers
+
+-----------------------------------------------------------
+
+developer3
+Groups
+
+developer3 developers
+
+-----------------------------------------------------------
+
+devops1
+Groups
+
+devops1 devops sudo
+
+===========================================================
+HOME DIRECTORY STATUS
+===========================================================
+
+/home/ubuntu         : Available
+/home/developer1     : Available
+/home/developer2     : Available
+/home/developer3     : Available
+/home/devops1        : Available
+
+===========================================================
+PROJECT DIRECTORY ACCESS
+===========================================================
+
+Directory                           Owner       Group
+
+/company-app/app                    devops1     developers
+/company-app/scripts                devops1     developers
+/company-app/backups                devops1     devops
+/company-app/logs                   devops1     devops
+/company-app/shared                 devops1     developers
+
+Shared Directory Permission
+
+drwxrwsr-x
+
+SGID Status
+
+Enabled
+
+===========================================================
+SECURITY SUMMARY
+===========================================================
+
+✓ Developer users created successfully.
+✓ DevOps user configured successfully.
+✓ Users assigned to correct groups.
+✓ Home directories verified.
+✓ Shared directory configured with SGID.
+✓ Principle of Least Privilege implemented.
+✓ Ownership and permissions verified.
+
+===========================================================
+REPORT SUMMARY
+===========================================================
+
+Total Users                  : 7
+Developer Users              : 3
+DevOps Users                 : 1
+Groups Configured            : 3
+Logged-in Users              : 2
+Home Directories Verified    : Yes
+Shared Directory Verified    : Yes
+Permission Status            : Correct
+Security Status              : HEALTHY
+
+===========================================================
+END OF REPORT
+===========================================================
+```
