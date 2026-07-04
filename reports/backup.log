@@ -1,1 +1,70 @@
+```log id="zjv5oq"
+===========================================================
+Backup Log
+Project : Linux DevOps Administration & Automation on AWS
+Server  : AWS EC2 Ubuntu 24.04
+Backup Directory : /company-app/backups
+===========================================================
 
+[2026-07-01 02:00:01] INFO     : Backup process started.
+[2026-07-01 02:00:02] INFO     : Compressing /company-app/app
+[2026-07-01 02:00:04] SUCCESS  : Backup created successfully.
+[2026-07-01 02:00:04] FILE     : backup_2026-07-01_020001.tar.gz
+[2026-07-01 02:00:04] SIZE     : 42 MB
+[2026-07-01 02:00:05] CLEANUP  : No old backups found.
+-----------------------------------------------------------
+
+[2026-07-02 02:00:01] INFO     : Backup process started.
+[2026-07-02 02:00:02] INFO     : Compressing /company-app/app
+[2026-07-02 02:00:05] SUCCESS  : Backup created successfully.
+[2026-07-02 02:00:05] FILE     : backup_2026-07-02_020001.tar.gz
+[2026-07-02 02:00:05] SIZE     : 43 MB
+[2026-07-02 02:00:06] CLEANUP  : No old backups removed.
+-----------------------------------------------------------
+
+[2026-07-03 02:00:01] INFO     : Backup process started.
+[2026-07-03 02:00:02] INFO     : Compressing /company-app/app
+[2026-07-03 02:00:04] SUCCESS  : Backup created successfully.
+[2026-07-03 02:00:04] FILE     : backup_2026-07-03_020001.tar.gz
+[2026-07-03 02:00:04] SIZE     : 43 MB
+[2026-07-03 02:00:05] CLEANUP  : Removed backup older than 7 days.
+[2026-07-03 02:00:05] DELETED  : backup_2026-06-25_020001.tar.gz
+-----------------------------------------------------------
+
+[2026-07-04 02:00:01] INFO     : Backup process started.
+[2026-07-04 02:00:02] INFO     : Compressing /company-app/app
+[2026-07-04 02:00:05] SUCCESS  : Backup created successfully.
+[2026-07-04 02:00:05] FILE     : backup_2026-07-04_020001.tar.gz
+[2026-07-04 02:00:05] SIZE     : 44 MB
+[2026-07-04 02:00:06] CLEANUP  : Removed backup older than 7 days.
+[2026-07-04 02:00:06] DELETED  : backup_2026-06-26_020001.tar.gz
+-----------------------------------------------------------
+
+[2026-07-05 02:00:01] INFO     : Backup process started.
+[2026-07-05 02:00:02] INFO     : Compressing /company-app/app
+[2026-07-05 02:00:03] ERROR    : Backup failed.
+[2026-07-05 02:00:03] REASON   : Insufficient disk space available.
+[2026-07-05 02:00:03] ACTION   : Backup process aborted.
+-----------------------------------------------------------
+
+[2026-07-05 02:15:20] INFO     : Disk space cleaned manually.
+[2026-07-05 02:16:01] INFO     : Backup process restarted.
+[2026-07-05 02:16:03] SUCCESS  : Backup created successfully.
+[2026-07-05 02:16:03] FILE     : backup_2026-07-05_021601.tar.gz
+[2026-07-05 02:16:03] SIZE     : 44 MB
+-----------------------------------------------------------
+
+Backup Summary
+-----------------------------------------------------------
+Total Backup Attempts      : 6
+Successful Backups         : 5
+Failed Backups             : 1
+Old Backups Removed        : 2
+Current Backup Location    : /company-app/backups
+Compression Format         : tar.gz
+Backup Status              : SUCCESS
+-----------------------------------------------------------
+
+End of Backup Log
+===========================================================
+```
