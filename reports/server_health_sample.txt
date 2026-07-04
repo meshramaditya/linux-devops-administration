@@ -1,1 +1,164 @@
+```text
+===========================================================
+Server Health Report
+Project : Linux DevOps Administration & Automation on AWS
+Server  : AWS EC2 Ubuntu 24.04 LTS
+Hostname: ip-172-31-15-210
+Generated On: 2026-07-04 14:30:01 IST
+===========================================================
 
+SYSTEM INFORMATION
+-----------------------------------------------------------
+Hostname              : ip-172-31-15-210
+Operating System      : Ubuntu 24.04 LTS
+Kernel Version        : Linux 6.8.0-1018-aws
+Architecture          : x86_64
+Current User          : ubuntu
+System Uptime         : 5 Days, 12 Hours, 18 Minutes
+Current Time          : Sat Jul 04 14:30:01 IST 2026
+
+-----------------------------------------------------------
+CPU INFORMATION
+-----------------------------------------------------------
+CPU Model             : Intel(R) Xeon(R) Platinum 8175M CPU @ 2.50GHz
+CPU Cores             : 2
+CPU Usage             : 18%
+Load Average          : 0.22, 0.31, 0.28
+
+Status                : HEALTHY
+
+-----------------------------------------------------------
+MEMORY INFORMATION
+-----------------------------------------------------------
+Total Memory          : 3.8 GB
+Used Memory           : 1.4 GB
+Free Memory           : 2.1 GB
+Available Memory      : 2.5 GB
+Memory Usage          : 37%
+
+Status                : HEALTHY
+
+-----------------------------------------------------------
+DISK INFORMATION
+-----------------------------------------------------------
+Filesystem            : /dev/nvme0n1p1
+Mount Point           : /
+Total Disk            : 20 GB
+Used Space            : 8.3 GB
+Available Space       : 10.7 GB
+Disk Usage            : 42%
+
+Status                : HEALTHY
+
+-----------------------------------------------------------
+NETWORK CONNECTIVITY
+-----------------------------------------------------------
+Internet Connectivity : CONNECTED
+Public DNS            : google.com
+Ping Test             : SUCCESS
+Packet Loss           : 0%
+
+Status                : HEALTHY
+
+-----------------------------------------------------------
+RUNNING SERVICES
+-----------------------------------------------------------
+✓ nginx               : Running
+✓ ssh                 : Running
+✓ cron                : Running
+✓ systemd-resolved    : Running
+✓ rsyslog             : Running
+
+Total Running Services: 5
+
+-----------------------------------------------------------
+OPEN PORTS
+-----------------------------------------------------------
+22/tcp    SSH
+80/tcp    HTTP
+443/tcp   HTTPS (Reserved)
+
+-----------------------------------------------------------
+TOP 5 CPU CONSUMING PROCESSES
+-----------------------------------------------------------
+PID      USER      CPU%     COMMAND
+
+2481     ubuntu    12.5     top
+921      root       3.2     nginx
+745      root       2.1     systemd
+612      root       1.8     sshd
+1102     root       1.4     cron
+
+-----------------------------------------------------------
+TOP 5 MEMORY CONSUMING PROCESSES
+-----------------------------------------------------------
+PID      USER      MEM%     COMMAND
+
+921      root      4.3      nginx
+745      root      2.6      systemd
+612      root      2.1      sshd
+1102     root      1.7      cron
+2481     ubuntu    1.2      top
+
+-----------------------------------------------------------
+BACKUP INFORMATION
+-----------------------------------------------------------
+Latest Backup
+
+backup_2026-07-04_020001.tar.gz
+
+Backup Size
+
+44 MB
+
+Backup Status
+
+SUCCESS
+
+-----------------------------------------------------------
+APPLICATION STATUS
+-----------------------------------------------------------
+Application Directory
+
+/company-app/app
+
+Application Service
+
+nginx
+
+Application Status
+
+RUNNING
+
+Health Check
+
+PASSED
+
+-----------------------------------------------------------
+MONITORING SUMMARY
+-----------------------------------------------------------
+CPU Usage             : NORMAL
+Memory Usage          : NORMAL
+Disk Usage            : NORMAL
+Network Status        : CONNECTED
+Services              : RUNNING
+Application           : AVAILABLE
+Backup                : SUCCESS
+
+Overall Server Status : HEALTHY
+
+-----------------------------------------------------------
+RECOMMENDATIONS
+-----------------------------------------------------------
+✓ Continue scheduled backups.
+✓ Monitor disk usage periodically.
+✓ Rotate application logs.
+✓ Verify backups regularly.
+✓ Keep the operating system updated.
+✓ Review failed login attempts.
+✓ Monitor CPU and memory trends.
+
+-----------------------------------------------------------
+END OF REPORT
+===========================================================
+```
