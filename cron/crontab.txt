@@ -1,1 +1,70 @@
+```cron
+# ============================================================
+# Linux DevOps Administration Project
+# Cron Schedule Configuration
+# ============================================================
+# Format:
+# ┌───────────── Minute (0 - 59)
+# │ ┌─────────── Hour (0 - 23)
+# │ │ ┌───────── Day of Month (1 - 31)
+# │ │ │ ┌─────── Month (1 - 12)
+# │ │ │ │ ┌───── Day of Week (0 - 7) (0 or 7 = Sunday)
+# │ │ │ │ │
+# * * * * * command
+# ============================================================
 
+# -----------------------------
+# Daily Application Backup
+# Runs every day at 2:00 AM
+# -----------------------------
+0 2 * * * /company-app/scripts/backup.sh
+
+# -----------------------------
+# Server Health Monitoring
+# Runs every 5 minutes
+# -----------------------------
+*/5 * * * * /company-app/scripts/health.sh
+
+# -----------------------------
+# Disk Usage Monitoring
+# Runs every 10 minutes
+# -----------------------------
+*/10 * * * * /company-app/scripts/disk-monitor.sh
+
+# -----------------------------
+# Application Monitoring
+# Runs every minute
+# Automatically restarts Nginx if it stops
+# -----------------------------
+* * * * * /company-app/scripts/app-monitor.sh
+
+# -----------------------------
+# User Report
+# Runs daily at midnight
+# -----------------------------
+0 0 * * * /company-app/scripts/user-report.sh
+
+# -----------------------------
+# Weekly Log Cleanup
+# Deletes log files older than 30 days
+# Every Sunday at 12:00 AM
+# -----------------------------
+0 0 * * 0 find /company-app/logs -type f -name "*.log" -mtime +30 -delete
+
+# ============================================================
+# Debug Examples (Optional)
+# Uncomment only while troubleshooting
+# ============================================================
+
+# Backup with logging
+# * * * * * /company-app/scripts/backup.sh >> /tmp/backup.log 2>&1
+
+# Health Script Debug
+# */5 * * * * /company-app/scripts/health.sh >> /tmp/health.log 2>&1
+
+# Disk Monitor Debug
+# */10 * * * * /company-app/scripts/disk-monitor.sh >> /tmp/disk.log 2>&1
+
+# Application Monitor Debug
+# * * * * * /company-app/scripts/app-monitor.sh >> /tmp/app-monitor.log 2>&1
+```
